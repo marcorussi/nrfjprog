@@ -11,17 +11,17 @@ Added following functionalities:
 Usage:
 
 ```
-nrfjprog.sh <action> [hexfile]
+nrfjprog.sh <action> [<params>]
 ```
 
-where action is one of:
+where action and params are one row of these:
  * `--reset`
  * `--pin-reset`
  * `--erase-all`
- * `--flash`
- * `--flash-softdevice`
- * `--write`
- * `--debug`
+ * `--flash <hexfile>`
+ * `--flash-softdevice <hexfile>`
+ * `--write <address_hex> <value_hex>`
+ * `--debug <outfile>`
  * `--rtt`
 
 ATTENTION: RTT functionality has not been well tested.
